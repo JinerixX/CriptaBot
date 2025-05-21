@@ -1,0 +1,6 @@
+aiogram==3.*
+aiosqlite
+httpx
+python-dotenv
+ruff
+bs4
