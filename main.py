@@ -21,7 +21,7 @@ from bot.core import dp  # noqa: F401  (на будущее, если появя
 # CMS-анонсеры
 from bot.ann_cms.binance import BinanceAnnouncer
 from bot.ann_cms.bybit import BybitAnnouncer
-from bot.ann_cms.okx import OKXAnnouncer
+from bot.ann_cms.okx import OkxAnnouncer
 from bot.ann_cms.bitget import BitgetAnnouncer
 
 # REST-fetchers
@@ -38,7 +38,7 @@ POLL_INTERVAL_CMS = int(os.getenv("POLL_INTERVAL_CMS", "90"))
 CMS_ANNOUNCERS: Iterable[type] = (
     BinanceAnnouncer,
     BybitAnnouncer,
-    OKXAnnouncer,
+    OkxAnnouncer,
     BitgetAnnouncer,
 )
 
