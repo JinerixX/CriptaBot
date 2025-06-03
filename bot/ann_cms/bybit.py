@@ -48,7 +48,7 @@ class BybitAnnouncer(AbstractAnnouncer):
         for art in articles:
             title: str = art.get("title", "")
             if not UPCOMING_RX.search(title):
-                continue  # skip non‑listing news
+                continue  # skip non-listing news
 
             m = TICKER_RX.search(title)
             if not m:

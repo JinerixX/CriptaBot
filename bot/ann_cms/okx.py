@@ -27,7 +27,6 @@ TICKER_RX = re.compile(
 UPCOMING_RX = re.compile(r"Will\s+List|Token Listing", re.IGNORECASE)
 SUFFIXES = ("USDT", "USDC")
 
-
 class OkxAnnouncer(AbstractAnnouncer):
     name = "OKX"
 

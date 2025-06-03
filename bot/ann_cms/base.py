@@ -1,4 +1,3 @@
-"""Общие типы и абстракции для всех announcers."""
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -19,8 +18,8 @@ class AnnouncerProto(Protocol):
     async def fetch(self) -> AsyncIterator[Announcement]:
         """Асинхронно генерирует анонсы."""
 
-# Для типизации в main.py можно наследоваться от этого минимального класса
 class AbstractAnnouncer:
+    """Базовый класс-заглушка для IDE/типизации."""
     name: str = "abstract"
     async def fetch(self) -> AsyncIterator[Announcement]:  # pragma: no cover – заглушка
         raise NotImplementedError
